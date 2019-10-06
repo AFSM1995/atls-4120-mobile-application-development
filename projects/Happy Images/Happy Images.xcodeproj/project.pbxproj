@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		381D897B23492BEB00F77C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D897A23492BEB00F77C9E /* AppDelegate.swift */; };
+		381D897D23492BEB00F77C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D897C23492BEB00F77C9E /* ViewController.swift */; };
+		381D898023492BEB00F77C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381D897E23492BEB00F77C9E /* Main.storyboard */; };
+		381D898223492BED00F77C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381D898123492BED00F77C9E /* Assets.xcassets */; };
+		381D898523492BED00F77C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381D898323492BED00F77C9E /* LaunchScreen.storyboard */; };
+		381D89952349465700F77C9E /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D898E2349465600F77C9E /* note5.wav */; };
+		381D89962349465700F77C9E /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D898F2349465600F77C9E /* note1.wav */; };
+		381D89972349465700F77C9E /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89902349465600F77C9E /* note4.wav */; };
+		381D89982349465700F77C9E /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89912349465600F77C9E /* note6.wav */; };
+		381D89992349465700F77C9E /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89922349465700F77C9E /* note3.wav */; };
+		381D899A2349465700F77C9E /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89932349465700F77C9E /* note7.wav */; };
+		381D899B2349465700F77C9E /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89942349465700F77C9E /* note2.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		381D897723492BEA00F77C9E /* Happy Images.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Images.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		381D897A23492BEB00F77C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		381D897C23492BEB00F77C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		381D897F23492BEB00F77C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		381D898123492BED00F77C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		381D898423492BED00F77C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		381D898623492BED00F77C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381D898E2349465600F77C9E /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		381D898F2349465600F77C9E /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		381D89902349465600F77C9E /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		381D89912349465600F77C9E /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		381D89922349465700F77C9E /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		381D89932349465700F77C9E /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		381D89942349465700F77C9E /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		381D897423492BEA00F77C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		381D896E23492BEA00F77C9E = {
+			isa = PBXGroup;
+			children = (
+				381D897923492BEB00F77C9E /* Happy Images */,
+				381D897823492BEA00F77C9E /* Products */,
+				381D898F2349465600F77C9E /* note1.wav */,
+				381D89942349465700F77C9E /* note2.wav */,
+				381D89922349465700F77C9E /* note3.wav */,
+				381D89902349465600F77C9E /* note4.wav */,
+				381D898E2349465600F77C9E /* note5.wav */,
+				381D89912349465600F77C9E /* note6.wav */,
+				381D89932349465700F77C9E /* note7.wav */,
+			);
+			sourceTree = "<group>";
+		};
+		381D897823492BEA00F77C9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				381D897723492BEA00F77C9E /* Happy Images.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		381D897923492BEB00F77C9E /* Happy Images */ = {
+			isa = PBXGroup;
+			children = (
+				381D897A23492BEB00F77C9E /* AppDelegate.swift */,
+				381D897C23492BEB00F77C9E /* ViewController.swift */,
+				381D897E23492BEB00F77C9E /* Main.storyboard */,
+				381D898123492BED00F77C9E /* Assets.xcassets */,
+				381D898323492BED00F77C9E /* LaunchScreen.storyboard */,
+				381D898623492BED00F77C9E /* Info.plist */,
+			);
+			path = "Happy Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		381D897623492BEA00F77C9E /* Happy Images */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381D898923492BED00F77C9E /* Build configuration list for PBXNativeTarget "Happy Images" */;
+			buildPhases = (
+				381D897323492BEA00F77C9E /* Sources */,
+				381D897423492BEA00F77C9E /* Frameworks */,
+				381D897523492BEA00F77C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Images";
+			productName = "Happy Images";
+			productReference = 381D897723492BEA00F77C9E /* Happy Images.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		381D896F23492BEA00F77C9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Álvaro Santillan";
+				TargetAttributes = {
+					381D897623492BEA00F77C9E = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 381D897223492BEA00F77C9E /* Build configuration list for PBXProject "Happy Images" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 381D896E23492BEA00F77C9E;
+			productRefGroup = 381D897823492BEA00F77C9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				381D897623492BEA00F77C9E /* Happy Images */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		381D897523492BEA00F77C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381D89992349465700F77C9E /* note3.wav in Resources */,
+				381D89962349465700F77C9E /* note1.wav in Resources */,
+				381D89982349465700F77C9E /* note6.wav in Resources */,
+				381D89952349465700F77C9E /* note5.wav in Resources */,
+				381D89972349465700F77C9E /* note4.wav in Resources */,
+				381D899B2349465700F77C9E /* note2.wav in Resources */,
+				381D898523492BED00F77C9E /* LaunchScreen.storyboard in Resources */,
+				381D899A2349465700F77C9E /* note7.wav in Resources */,
+				381D898223492BED00F77C9E /* Assets.xcassets in Resources */,
+				381D898023492BEB00F77C9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		381D897323492BEA00F77C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381D897D23492BEB00F77C9E /* ViewController.swift in Sources */,
+				381D897B23492BEB00F77C9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		381D897E23492BEB00F77C9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				381D897F23492BEB00F77C9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		381D898323492BED00F77C9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				381D898423492BED00F77C9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		381D898723492BED00F77C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		381D898823492BED00F77C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		381D898A23492BED00F77C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59KBF4LMM8;
+				INFOPLIST_FILE = "Happy Images/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvarosantillan.Happy-Images";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		381D898B23492BED00F77C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59KBF4LMM8;
+				INFOPLIST_FILE = "Happy Images/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvarosantillan.Happy-Images";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		381D897223492BEA00F77C9E /* Build configuration list for PBXProject "Happy Images" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381D898723492BED00F77C9E /* Debug */,
+				381D898823492BED00F77C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381D898923492BED00F77C9E /* Build configuration list for PBXNativeTarget "Happy Images" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381D898A23492BED00F77C9E /* Debug */,
+				381D898B23492BED00F77C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 381D896F23492BEA00F77C9E /* Project object */;
+}
