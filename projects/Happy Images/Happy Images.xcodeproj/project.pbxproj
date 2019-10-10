@@ -12,13 +12,7 @@
 		381D898023492BEB00F77C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381D897E23492BEB00F77C9E /* Main.storyboard */; };
 		381D898223492BED00F77C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381D898123492BED00F77C9E /* Assets.xcassets */; };
 		381D898523492BED00F77C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381D898323492BED00F77C9E /* LaunchScreen.storyboard */; };
-		381D89952349465700F77C9E /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D898E2349465600F77C9E /* note5.wav */; };
-		381D89962349465700F77C9E /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D898F2349465600F77C9E /* note1.wav */; };
-		381D89972349465700F77C9E /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89902349465600F77C9E /* note4.wav */; };
-		381D89982349465700F77C9E /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89912349465600F77C9E /* note6.wav */; };
-		381D89992349465700F77C9E /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89922349465700F77C9E /* note3.wav */; };
-		381D899A2349465700F77C9E /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89932349465700F77C9E /* note7.wav */; };
-		381D899B2349465700F77C9E /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 381D89942349465700F77C9E /* note2.wav */; };
+		38641AE6234ED5FA0053E0CC /* cat1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38641AE5234ED5FA0053E0CC /* cat1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +23,7 @@
 		381D898123492BED00F77C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381D898423492BED00F77C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		381D898623492BED00F77C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		381D898E2349465600F77C9E /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
-		381D898F2349465600F77C9E /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
-		381D89902349465600F77C9E /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
-		381D89912349465600F77C9E /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
-		381D89922349465700F77C9E /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
-		381D89932349465700F77C9E /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
-		381D89942349465700F77C9E /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		38641AE5234ED5FA0053E0CC /* cat1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +42,7 @@
 			children = (
 				381D897923492BEB00F77C9E /* Happy Images */,
 				381D897823492BEA00F77C9E /* Products */,
-				381D898F2349465600F77C9E /* note1.wav */,
-				381D89942349465700F77C9E /* note2.wav */,
-				381D89922349465700F77C9E /* note3.wav */,
-				381D89902349465600F77C9E /* note4.wav */,
-				381D898E2349465600F77C9E /* note5.wav */,
-				381D89912349465600F77C9E /* note6.wav */,
-				381D89932349465700F77C9E /* note7.wav */,
+				38641AE5234ED5FA0053E0CC /* cat1.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,14 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381D89992349465700F77C9E /* note3.wav in Resources */,
-				381D89962349465700F77C9E /* note1.wav in Resources */,
-				381D89982349465700F77C9E /* note6.wav in Resources */,
-				381D89952349465700F77C9E /* note5.wav in Resources */,
-				381D89972349465700F77C9E /* note4.wav in Resources */,
-				381D899B2349465700F77C9E /* note2.wav in Resources */,
+				38641AE6234ED5FA0053E0CC /* cat1.wav in Resources */,
 				381D898523492BED00F77C9E /* LaunchScreen.storyboard in Resources */,
-				381D899A2349465700F77C9E /* note7.wav in Resources */,
 				381D898223492BED00F77C9E /* Assets.xcassets in Resources */,
 				381D898023492BEB00F77C9E /* Main.storyboard in Resources */,
 			);
