@@ -24,13 +24,16 @@ class ViewController: UIViewController {
         nameDisplay.text = name
         favColorDisplay.text = color
         favNumberDisplay.text = user.favNumber
+        print(user.catPerson)
+        print(user.dogPerson)
         
-        if user.dogPerson == true {
-            petPrefCat.text = "true"
-        }
-        else if user.dogPerson == false {
-            petPrefCat.text = "false"
-        }
+//        if user.dogPerson == true {
+//            petPrefCat.text = "true"
+//
+//        }
+//        else if user.dogPerson == false {
+//            petPrefCat.text = "false"
+//        }
         
     }
     

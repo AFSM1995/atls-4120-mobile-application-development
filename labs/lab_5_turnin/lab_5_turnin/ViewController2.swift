@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController, UITextFieldDelegate {
     var dogString = String()
     var dogPerson = Bool()
     var catPerson = Bool()
@@ -17,8 +17,6 @@ class ViewController2: UIViewController {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var favColor: UITextField!
     @IBOutlet weak var favNumber: UITextField!
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //if segue.identifier == "doneFavs"{
@@ -38,35 +36,42 @@ class ViewController2: UIViewController {
         }
         if dogPerson == true{
             scene1ViewController.petPrefDog.text = firstName.text! + " is a dog person"
+            scene1ViewController.user.dogPerson = true
         }
         else if dogPerson == false{
             scene1ViewController.petPrefDog.text = firstName.text! + " is not a dog person"
+            scene1ViewController.user.dogPerson = false
         }
         if catPerson == true{
             scene1ViewController.petPrefCat.text = firstName.text! + " is a cat person"
+            scene1ViewController.user.catPerson = true
         }
         else if catPerson == false{
             scene1ViewController.petPrefCat.text = firstName.text! + " is not a cat person"
+            scene1ViewController.user.catPerson = false
         }
         //}
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        firstName.delegate = self
+        lastName.delegate = self
+        favNumber.delegate = self
+        favNumber.keyboardType = .numberPad
+        favColor.delegate = self
         print("current state cat:", catPerson)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Hide keyboard when the user press return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
-
+    
+    // Hide keyboard when user touches outside keyboard.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

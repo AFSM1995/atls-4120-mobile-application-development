@@ -20,9 +20,11 @@ class ViewControllerCat: UIViewController {
         
         if catPersonSeg.selectedSegmentIndex == 0 {
             viewController2.catPerson = true
+            viewController2.dogPerson = dogPerson
         }
         else if catPersonSeg.selectedSegmentIndex == 1 {
             viewController2.catPerson = false
+            viewController2.dogPerson = dogPerson
         }
     }
     
