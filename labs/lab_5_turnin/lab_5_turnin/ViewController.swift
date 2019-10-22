@@ -19,18 +19,18 @@ class ViewController: UIViewController {
     
     @IBAction func unwindSegue (_ segue:UIStoryboardSegue){
         let name = "Hello " + user.firstName! + " " + user.lastName!
-        let color = user.favColor! + " is a great color, yes indeed."
+        let color = user.favColor! + " is a great color."
         
         nameDisplay.text = name
         favColorDisplay.text = color
         favNumberDisplay.text = user.favNumber
-//
-//        if user.dogPerson == true {
-//            petPrefCat.text = "true"
-//        }
-//        else if user.dogPerson == false {
-//            petPrefCat.text = "false"
-//        }
+        
+        if user.dogPerson == true {
+            petPrefCat.text = "true"
+        }
+        else if user.dogPerson == false {
+            petPrefCat.text = "false"
+        }
         
     }
     

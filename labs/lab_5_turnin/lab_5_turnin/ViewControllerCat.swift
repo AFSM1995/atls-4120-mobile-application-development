@@ -15,16 +15,16 @@ class ViewControllerCat: UIViewController {
     var dogString = String()
     var dogPerson = Bool()
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let viewController2 = segue.destination as! ViewController2
-//        
-//        if catPersonSeg.selectedSegmentIndex == 0 {
-//            viewController2.catPerson = true
-//        }
-//        else if catPersonSeg.selectedSegmentIndex == 1 {
-//            viewController2.catPerson = false
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController2 = segue.destination as! ViewController2
+        
+        if catPersonSeg.selectedSegmentIndex == 0 {
+            viewController2.catPerson = true
+        }
+        else if catPersonSeg.selectedSegmentIndex == 1 {
+            viewController2.catPerson = false
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

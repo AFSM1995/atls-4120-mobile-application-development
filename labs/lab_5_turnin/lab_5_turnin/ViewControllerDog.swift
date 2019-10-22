@@ -21,11 +21,11 @@ class ViewControllerDog: UIViewController {
         let viewControllerCat = segue.destination as! ViewControllerCat
         
         if dogPersonSeg.selectedSegmentIndex == 0 {
-            viewControllerCat.dogString = "Ok Cool you a dog person."
+            viewControllerCat.dogString = "Ok cool you a dog person."
             viewControllerCat.dogPerson = true
         }
         else if dogPersonSeg.selectedSegmentIndex == 1 {
-            viewControllerCat.dogString = "Intresting, your not a dog person."
+            viewControllerCat.dogString = "Werid, your not a dog person."
             viewControllerCat.dogPerson = false
         }
     }

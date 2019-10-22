@@ -36,18 +36,18 @@ class ViewController2: UIViewController {
         if favNumber.text!.isEmpty == false{
             scene1ViewController.user.favNumber = favNumber.text
         }
-//        if dogPerson == true{
-//            scene1ViewController.petPrefDog.text = firstName.text! + " is a dog person"
-//        }
-//        else if dogPerson == false{
-//            scene1ViewController.petPrefDog.text = firstName.text! + " is not a dog person"
-//        }
-//        if catPerson == true{
-//            scene1ViewController.petPrefCat.text = firstName.text! + " is a cat person"
-//        }
-//        else if catPerson == false{
-//            scene1ViewController.petPrefCat.text = firstName.text! + " is not a cat person"
-//        }
+        if dogPerson == true{
+            scene1ViewController.petPrefDog.text = firstName.text! + " is a dog person"
+        }
+        else if dogPerson == false{
+            scene1ViewController.petPrefDog.text = firstName.text! + " is not a dog person"
+        }
+        if catPerson == true{
+            scene1ViewController.petPrefCat.text = firstName.text! + " is a cat person"
+        }
+        else if catPerson == false{
+            scene1ViewController.petPrefCat.text = firstName.text! + " is not a cat person"
+        }
         //}
     }
     
