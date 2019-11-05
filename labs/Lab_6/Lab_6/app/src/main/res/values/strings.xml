@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab_6</string>
+    <string name="title">Hint it has a cool flag</string>
+    <string name="button_text">Am I right?</string>
+</resources>

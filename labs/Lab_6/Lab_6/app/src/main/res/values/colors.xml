@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom Colors -->
+    <color name="colorPrimary">#006989</color>
+    <color name="colorPrimaryDark">#007090</color>
+    <color name="colorAccent">#A3BAC3</color>
+
+    <color name="background">#01A7C2</color>
+    <color name="primaryTextColor">#0D1321</color>
+    <color name="secondaryTextColor">#EAEBED</color>
+
+    <color name="primaryColor">#C1BCAC</color>
+    <color name="primaryLightColor">#EFD0CA</color>
+    <color name="primaryDarkColor">#004E64</color>
+    <color name="secondaryColor">#7C72A0</color>
+    <color name="secondaryLightColor">#EEF5DB</color>
+    <color name="secondaryDarkColor">#40376E</color>
+</resources>
