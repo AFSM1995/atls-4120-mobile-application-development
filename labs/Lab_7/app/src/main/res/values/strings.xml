@@ -1,0 +1,20 @@
+<resources>
+    <string name="appName">Mathz</string>
+    <string name="welcomeText">Math is fun yay</string>
+    <string name="result">:)</string>
+    <string name="verify">verify</string>
+    <string name="sureText">Im sure this is the answer</string>
+    <string name="check">check</string>
+    <string name="numberOne">Number One</string>
+    <string name="numberTwo">Number Two</string>
+    <string name="add">Addition</string>
+    <string name="sub">Subtraction</string>
+    <string name="imgDec">Pictorial user feedback</string>
+
+    <string-array name="problems">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+</resources>

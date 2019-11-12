@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcomeText" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/result" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:entries="@array/problems" />
+
+            <EditText
+                android:id="@+id/inputOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/numberOne"
+                android:inputType="number" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="211dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/add"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"/>
+
+                <RadioButton
+                    android:id="@+id/sub"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/inputTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/numberTwo"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:text="@string/sureText" />
+
+            <Switch
+                android:id="@+id/noSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="42dp"
+                android:text="@string/verify"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="77dp"
+                android:layout_height="57dp"
+                app:srcCompat="@drawable/ic_smile_regular"
+                android:contentDescription="@string/imgDec" />
+
+            <Button
+                android:id="@+id/checkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calculate"
+                android:text="@string/check" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
