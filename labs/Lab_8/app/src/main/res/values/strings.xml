@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lab_8</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="fortuneButton">Fortune</string>
+    <string-array name="colorOptions">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+    </string-array>
+    <string-array name="numberOptions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>
