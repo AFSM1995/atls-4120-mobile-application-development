@@ -5,15 +5,22 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.SearchView;
 import android.widget.SeekBar;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.TableRow.LayoutParams;
 
 public class MainActivity extends AppCompatActivity {
     private EditText assignment1;
@@ -24,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText score2;
     private EditText weight2;
     private TextView result;
-    private Button calculateInput;
+    private TextView maxText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,40 +46,74 @@ public class MainActivity extends AppCompatActivity {
         score2 = findViewById(R.id.score2);
         weight2 = findViewById(R.id.weight2);
         result = findViewById(R.id.resultText);
-        calculateInput = findViewById(R.id.calculate);
+        maxText = findViewById(R.id.max);
         seekBarUpdater();
+        buttonToSeekUpdater(0);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                addRow();
             }
         });
     }
 
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.calculate:
-                int testint = Integer.parseInt(score1.getText().toString());
-                scoreSeekBar1.setProgress(testint);
-                scoreSeekBar1.refreshDrawableState();
-                calculate(view);
+    @SuppressLint("ResourceType")
+    public void addRow() {
+        TableLayout mainTable = (TableLayout)findViewById(R.id.tableLayout2);
+        TableRow row = new TableRow(this);
+        TableRow sliderow = new TableRow(this);
+        TextView txt = new TextView(this);
+        EditText txtbox = new EditText(this);
+        EditText txtbox2 = new EditText(this);
+        EditText txtbox3 = new EditText(this);
+        txtbox.setHint("Assignment");
+        txtbox2.setHint("Score");
+        txtbox2.setTag("score3");
+
+        row.addView(txtbox);
+        row.addView(txtbox2);
+        row.addView(txtbox3);
+        txtbox2.setId(R.id.button_group_cancel);
+        mainTable.addView(row, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+        //addSeekbar();
+    }
+
+    public void addSeekbar() {
+        TableLayout mainTable = (TableLayout)findViewById(R.id.tableLayout2);
+        TableRow row = new TableRow(this);
+        SeekBar seek = new SeekBar(this);
+        SeekBar seek2 = new SeekBar(this);
+        SeekBar seek3 = new SeekBar(this);
+        SeekBar seek4 = new SeekBar(this);
+        row.setGravity(Gravity.CENTER);
+        row.addView(seek);
+        mainTable.addView(row, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+    }
+
+    public void test() {
+        TableLayout table = (TableLayout) findViewById(R.id.tableLayout1);
+
+        for (int i = 0; i < table.getChildCount(); i++)
+        {
+            if( table.getChildAt( i ) instanceof EditText ) {
+                // DO something with text
+            }
         }
     }
 
     public void seekBarUpdater( ) {
-//        score1.setText("Test " + scoreSeekBar1.getProgress());
-
         scoreSeekBar1.setOnSeekBarChangeListener(
             new SeekBar.OnSeekBarChangeListener() {
                 int seekBarValue;
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                     seekBarValue = progress;
-                    score1.setText(Integer.toString(seekBarValue));
-                    calculate2();
+                    if(fromUser) {
+                        score1.setText(Integer.toString(seekBarValue));
+                    }
+                    calculate();
                 }
 
                 @Override
@@ -82,8 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
-                    score1.setText(Integer.toString(seekBarValue));
-                    calculate2();
+
                 }
             }
         );
@@ -94,54 +134,97 @@ public class MainActivity extends AppCompatActivity {
             new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                    scoreSeekBar1.setProgress(0);
-//                    calculate2();
+
                 }
 
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    Log.i("TEST", "Updated seek");
-//                    scoreSeekBar1.setProgress(scoreOne);
-//                    scoreSeekBar1.refreshDrawableState();
-//                    calculate2();
+                    int testint = ((score1.getText().toString()).length() <= 0 ? 0 : Integer.parseInt(score1.getText().toString()));
+                    scoreSeekBar1.setProgress(testint);
+                    scoreSeekBar1.refreshDrawableState();
                 }
 
                 @Override
                 public void afterTextChanged(Editable s) {
-                    Log.i("TEST", "Updated seek after");
-                    calculate2();
+                    calculate();
                 }
             }
         );
+
+        score2.addTextChangedListener(
+                new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                        calculate();
+                    }
+                }
+        );
+
+        weight1.addTextChangedListener(
+                new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                        calculate();
+                    }
+                }
+        );
+
+        weight2.addTextChangedListener(
+                new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                        calculate();
+                    }
+                }
+        );
     }
 
-    @SuppressLint("SetTextI18n")
-    public void calculate (View view) {
-        float scoreOne = Integer.parseInt(score1.getText().toString());
-//        scoreSeekBar1.setProgress(Math.round(scoreOne));
-        buttonToSeekUpdater(Math.round(scoreOne));
+    public void calculate () {
+        int inputScore = ((score1.getText().toString()).length() <= 0) ? 0 : Integer.parseInt(score1.getText().toString());
+        float scoreOne = inputScore;
         scoreOne = scoreOne/100;
-        float scoreTwo = Integer.parseInt(score2.getText().toString());
+        int inputScoreTwo = ((score2.getText().toString()).length() <= 0) ? 0 : Integer.parseInt(score2.getText().toString());
+        float scoreTwo = inputScoreTwo;
         scoreTwo = scoreTwo/100;
-        float weightOne = Integer.parseInt(weight1.getText().toString());
-        float weightTwo = Integer.parseInt(weight2.getText().toString());
+        int inputWeightOne = ((weight1.getText().toString()).length() <= 0) ? 0 : Integer.parseInt(weight1.getText().toString());
+        float weightOne = inputWeightOne;
+        int inputWeightTwo = ((weight2.getText().toString()).length() <= 0) ? 0 : Integer.parseInt(weight2.getText().toString());
+        float weightTwo = inputWeightTwo;
 
         float resultCalculation = (weightOne * scoreOne) + (weightTwo * scoreTwo);
         result.setText(Float.toString(resultCalculation));
+
+        TextView group_can;
+
+        group_can = findViewById(R.id.button_group_cancel);
+        maxText.setText(group_can.getText().toString());
     }
-
-    public void calculate2 () {
-        float scoreOne = Integer.parseInt(score1.getText().toString());
-//        scoreSeekBar1.setProgress(Math.round(scoreOne));
-//        buttonToSeekUpdater(Math.round(scoreOne));
-        scoreOne = scoreOne/100;
-        float scoreTwo = Integer.parseInt(score2.getText().toString());
-        scoreTwo = scoreTwo/100;
-        float weightOne = Integer.parseInt(weight1.getText().toString());
-        float weightTwo = Integer.parseInt(weight2.getText().toString());
-
-        float resultCalculation = (weightOne * scoreOne) + (weightTwo * scoreTwo);
-        result.setText(Float.toString(resultCalculation));
-    }
-
 }
