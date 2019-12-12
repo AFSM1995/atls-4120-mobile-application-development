@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Grade Calculator</string>
     <string name="action_settings">Settings</string>
+
+    <string name="Assignment">Assignment</string>
+    <string name="Score">Score</string>
+    <string name="Weight">Weight</string>
+    <string name="Unlocked">Unlocked</string>
+    <string name="Min_Grade">Min Grade Viable</string>
+    <string name="Max_Grade">Max Grade Viable</string>
+    <string name="Current_Weight">Current Weight</string>
+    <string name="Current_Grade">Current Grade</string>
 </resources>

@@ -7,17 +7,21 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <TableLayout
             android:id="@+id/tableLayout1"
             android:layout_width="fill_parent"
+            android:padding="10dp"
             android:layout_height="fill_parent"
             android:stretchColumns="*">
 
+            <!-- Row 1 -->
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -25,25 +29,36 @@
 
                 <EditText
                     android:id="@+id/assignment1"
-                    android:hint="Assignment"
+                    android:hint="@string/Assignment"
                     android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/score1"
-                    android:hint="Score"
+                    android:hint="@string/Score"
                     android:inputType="numberDecimal" />
 
                 <EditText
                     android:id="@+id/weight1"
-                    android:hint="Weight"
+                    android:hint="@string/Weight"
                     android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/lock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:text="@string/Unlocked"/>
+
             </TableRow>
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+            <TableRow android:textAlignment="center">
 
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_weight="1" />
+            </TableRow>
 
+            <!-- Row 2 -->
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -51,105 +66,465 @@
 
                 <EditText
                     android:id="@+id/assignment2"
-                    android:hint="Assignment"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
                     android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/score2"
-                    android:hint="Score"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
                     android:inputType="numberDecimal" />
 
                 <EditText
                     android:id="@+id/weight2"
-                    android:hint="Weight"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
                     android:inputType="numberDecimal" />
-            </TableRow>
-            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/tableLayout2"
-                android:stretchColumns="*"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
+                <Button
+                    android:id="@+id/lock2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
 
-            </TableLayout>
-            <TableRow
-                android:textAlignment="center">
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
 
                 <SeekBar
-                    android:id="@+id/seekBar1"
+                    android:id="@+id/seekBar2"
+                    android:visibility="invisible"
                     android:layout_weight="1" />
-            </TableRow>
-<!--            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--                android:id="@+id/tableLayout_slide"-->
-<!--                android:layout_width="fill_parent"-->
-<!--                android:layout_height="fill_parent"-->
-<!--                >-->
-<!--            </TableLayout>-->
 
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment3"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score3"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight3"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment4"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score4"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight4"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar4"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment5"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score5"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight5"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 6 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment6"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score6"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight6"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar6"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment7"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score7"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight7"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar7"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment8"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score8"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight8"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar8"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 9 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment9"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score9"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight9"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar9"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Row 10 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center">
+
+                <EditText
+                    android:id="@+id/assignment10"
+                    android:hint="@string/Assignment"
+                    android:visibility="invisible"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/score10"
+                    android:hint="@string/Score"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/weight10"
+                    android:hint="@string/Weight"
+                    android:visibility="invisible"
+                    android:inputType="numberDecimal" />
+                <Button
+                    android:id="@+id/lock10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="disable"
+                    android:visibility="invisible"
+                    android:text="@string/Unlocked"/>
+
+            </TableRow>
+
+            <TableRow android:textAlignment="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar10"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+            </TableRow>
 
         </TableLayout>
     </ScrollView>
 
     <TableLayout
-        android:id="@+id/tableLayout3"
+        android:id="@+id/resultTableLayout"
         android:layout_width="fill_parent"
-        android:layout_height="120dp"
-        android:layout_marginBottom="0dp"
+        android:layout_height="140dp"
         android:background="#CDCDCD"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
-            android:id="@+id/testrow3"
+            android:id="@+id/resultRow1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textAlignment="center">
 
             <TextView
-                android:id="@+id/min"
-                android:layout_width="183dp"
+                android:id="@+id/minGrade"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Max Grade Possible"
-                android:inputType="textPersonName"
                 android:gravity="center"
-                android:textAlignment="center" />
+                android:hint="@string/Min_Grade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/max"
+                android:id="@+id/maxGrade"
                 android:layout_width="183dp"
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Max Grade Possible"
-                android:inputType="textPersonName"
                 android:gravity="center"
-                android:textAlignment="center" />
+                android:hint="@string/Max_Grade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
         </TableRow>
 
         <TableRow
-            android:id="@+id/testrow4"
+            android:id="@+id/resultRow2"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="69dp"
             android:textAlignment="center">
 
             <TextView
-                android:id="@+id/resultText"
+                android:id="@+id/weightTotal"
                 android:layout_width="183dp"
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Current Grade"
+                android:hint="@string/Current_Weight"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/currentGrade"
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Current_Grade"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
         </TableRow>
     </TableLayout>
