@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Custom theme. -->
+    <style name="FinalAlTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/secondaryDarkColor</item>
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+        <item name="android:colorAccent">@color/secondaryLightColor</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

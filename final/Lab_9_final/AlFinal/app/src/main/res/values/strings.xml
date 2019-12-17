@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AlFinal</string>
+    <string name="burrito_builder">Burrito Builder</string>
+    <string name="name">Name</string>
+    <string name="meat">Meat</string>
+    <string name="burrito">burrito</string>
+    <string name="taco">taco</string>
+    <string name="salsa">salsa</string>
+    <string name="cheese">cheese</string>
+    <string name="sour_cream">sour cream</string>
+    <string name="guacamole">guacamole</string>
+    <string name="textview">TextView</string>
+    <string name="build">Build</string>
+    <string name="gluten_free">Gluten-free</string>
+    <string name="find_burrito">Find Burrito</string>
+    <string name="textview22">TextView</string>
+
+    <string-array name="locations">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+</resources>
